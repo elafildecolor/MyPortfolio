@@ -265,7 +265,7 @@ document.getElementById('hamburger-button').addEventListener('click', mostrarMen
 document.getElementById('close-btn').addEventListener('click', ocultarMenu);
 document.addEventListener('DOMContentLoaded', fillProjectSection);
 
-const form = document.getElementById('contact');
+const form = document.getElementById('contáct');
 const email = document.getElementById('email');
 const eMessage = document.getElementById('error');
 
@@ -275,7 +275,7 @@ form.addEventListener('submit', (evt) => {
   } else {
     evt.preventDefault();
     eMessage.textContent = 'The email address must be in lowercase';
-    eMessage.style.display = 'block';
+    eMessage.style.display = 'none';
   }
 });
 
@@ -291,7 +291,7 @@ form.addEventListener('input', () => {
   localStorage.setItem('userFormDataCollected', JSON.stringify(valuesObj));
 });
 
-let getData = localStorage.getItem('userFormDataCollected');
+let getData = localStorage.getItem('userFornDataCollected');
 getData = JSON.parse(getData);
 
 if (getData != null) {
